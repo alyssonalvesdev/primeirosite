@@ -28,15 +28,18 @@ header {
     border-radius: 10px;
 }
 
+footer ul,
 .menu ul {
     display: flex;
     justify-content: space-around;
 }
 
+footer li,
 .menu li {
     list-style: none;
 }
 
+footer a,
 .menu a {
     text-decoration: none;
     padding: 10px;
@@ -72,18 +75,65 @@ div,
     font-style: italic;
 }
 
-h2 {
-    color: whitesmoke;
-    margin:120px 10% 10px;
+main {
+    margin-left: 100px;
+    margin-right: 100px;
 
 }
 
+h2 {
+    color: whitesmoke;
+    margin:120px 30px 50px;
+    position: relative;
+}
+
+article {
+    height: 100vh;
+    top: 30vh;
+
+}
 article p {
     color: whitesmoke;
-    margin: 30px 100px;
+    margin: 30px opx;
+    
+}
+
+span {
+    display: flex;
+    height: 100vh;
+    position: relative;
 }
 
 .img-portfolio {
     width: 180px;
     height: 180px;
+    border-radius: 150px;
+    margin: 100px 50px 5px;
+    text-align: center;
+    border-bottom: 3px solid orange;
+    border-top: 3px solid orange;
+    border-left: 3px solid orange;
+    border-right: 3px solid orange;
 }
+
+figcaption {
+    color: whitesmoke;
+    margin:5px;
+    text-align: center;
+}
+
+figure a {
+    color: orange;
+}
+
+footer {
+    background:#02013d;
+    margin: 10px;   
+    width: 98vw;
+    bottom: 1px;
+    padding: 10px;
+    border-radius: 10px;
+}
+ footer h2 {
+     margin: 10px;
+ }
