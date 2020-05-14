@@ -62,8 +62,7 @@ a:hover {
     margin-bottom: 40px;*/
     margin: 0px;
 }
-
-div,
+.apresentacao,
 .site-subtitle,
 .site-title {
     color: whitesmoke;
@@ -84,42 +83,163 @@ main {
 h2 {
     color: whitesmoke;
     margin:120px 30px 50px;
-    position: relative;
 }
 
 article {
     height: 100vh;
-    top: 30vh;
+    align-items:center;
+    justify-content:center;
 
 }
+
 article p {
     color: whitesmoke;
     margin: 30px opx;
+}
+
+section{
+    height: 100vh;
     
 }
 
-span {
-    display: flex;
+.grip {
+    display: grid;
     height: 100vh;
-    position: relative;
+    justify-content: center;
+    text-align: center;
 }
+
+@media (max-width: 560px) {
+    section{
+        height: 170vh;
+    }
+
+    footer ul{
+        display: block; 
+        font-size: 25px;
+    }
+    main {
+        margin: 5vh;
+    }
+    .grip {
+        display: grid;
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #perfil{
+        width: 300px; 
+        height: 290px;
+    }
+
+    .site-subtitle,
+    .site-title {
+    font-size: 40px;
+  }
+
+    body {
+    font-size: 30px;
+    }
+  }
+@media (min-width: 560px) and (max-width: 880px) {
+    .grid {
+    display: grid;
+      grid-template-columns: repeat(2, 240px);
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 8em - 48px)
+    }
+    main {
+        margin: 5vh;
+    }
+
+    footer ul{
+        display: block; 
+    }
+
+    #perfil{
+        width: 300px; 
+        height: 290px;
+    }
+
+    .site-subtitle,
+    .site-title {
+    font-size: 40px;
+  }
+
+    body {
+    font-size: 30px;
+    }
+
+  }
+  
+@media (min-width: 880px) and (max-width: 1000px){
+    .grid {
+        display: grid;  
+      grid-template-columns: repeat(3, 260px);
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 8em - 48px);
+    }
+    main {
+        margin: 5vh;
+    }
+
+    #perfil{
+        width: 300px; 
+        height: 290px;
+    }
+
+    .site-subtitle,
+    .site-title {
+    font-size: 40px;
+  }
+
+    body {
+    font-size: 30px;
+    }
+
+}
+
+@media (min-width: 1000px){
+  .grid {
+      display: grid;
+      gap: 2em;
+      grid-template-columns: repeat(4, 240px);
+      justify-content: center;
+      text-align: center;
+    }
+
+    main {
+        margin: 5vh;
+    }
+
+  }
 
 .img-portfolio {
     width: 180px;
     height: 180px;
     border-radius: 150px;
-    margin: 100px 50px 5px;
+    gap: 5em;
+    /*margin: 100px 50px 5px;*/
     text-align: center;
     border-bottom: 3px solid orange;
     border-top: 3px solid orange;
     border-left: 3px solid orange;
     border-right: 3px solid orange;
+    
 }
 
 figcaption {
     color: whitesmoke;
     margin:5px;
     text-align: center;
+}
+
+figure {
+    text-align: center
+    
 }
 
 figure a {
