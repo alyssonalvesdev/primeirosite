@@ -11,7 +11,7 @@
         <!--<link rel="stylesheet" type="text/css" href="css/estilos2.css" media="screen" /> -->
     </head>
     <body>
-        <header>
+        <header><a name="Sobre"></a>
             <nav class="menu">
               <ul>
                 <li><a href="#Sobre">Sobre</a></li>
@@ -19,20 +19,18 @@
                 <li><a href="#Contato">Contato</a></li>
               </ul>
             </nav>
-            <div class="apresentacao">
-              <img src="./img/perfil.jpg" alt="Foto de perfil" id="perfil">
-              <h1 class="site-title">Alysson Alves</h1>
-              <h2 class="site-subtitle">Especialista em Adm. e Segurança</h2>
-            </div>
-
         </header>
         <main>
-          <article >
-            <h2><a name="Sobre"></a>Sobre</h2>
-            <p>Sou o Alysson dos Santos Alves, tenho 24 anos e sou Graduado em Redes de computadores(2014-2017) com Especialização em Administração e Segurança de Servidores(2018-2020). Sempre procurando novas tecnologias e conhecimento, nesse momento com o foco no mundo de desenvolvimento</p>
-          </article>
-          <section>
-            <h2><a name="Portfolio">Portfólio</a></h2>
+          <div class="apresentacao">
+            <img src="./img/perfil.jpg" alt="Foto de perfil" id="perfil">
+            <h1 class="site-title">Alysson Alves</h1>
+            <h2 class="site-subtitle">Especialista em Adm. e Segurança</h2>
+            <section id="sobre" class="sobre"><a name="Portfolio"></a>
+              <p>Sou o Alysson dos Santos Alves, tenho 24 anos e sou Graduado em Redes de computadores(2014-2017) com Especialização em Administração e Segurança de Servidores(2018-2020). Sempre procurando novas tecnologias e conhecimento, nesse momento com o foco no mundo de desenvolvimento</p>
+            </section>
+          </div>          
+          <section id="portfolio" class="portfolio">
+            <h2>Portfólio</h2>
             <div class="grid">
               <figure>
                 <img class="img-portfolio" src="./img/consultor.jpg" alt="Imagem de Consultor">
@@ -47,7 +45,7 @@
                 <figcaption>Gerenciamento de Servidores</figcaption>
               </figure>
               <figure>
-                <img class="img-portfolio" src="./img/programador.png" alt="Imagem de Desenvolvedor">
+                <img class="img-portfolio" src="./img/programador.jpg" alt="Imagem de Desenvolvedor">
                 <figcaption>Desenvolvedor <a>(Em breve)</a></figcaption>
                 </figure>
             </div>
@@ -57,9 +55,9 @@
           <nav class="rodape">
             <h2><a name="Contato">Contato</a></h2>
             <ul>
-              <li><a href="#">Email: alysson.santos@outlook.com</a></li>
-              <li><a href="#">Whatsapp: (85) 98942-1521</a></li>
-              <li><a href="#">GitHun</a></li>
+              <li><p>Email: alysson.santos@outlook.com</p></li>
+              <li><a href="https://api.whatsapp.com/send?phone=5585989421521">Whatsapp: (85) 98942-1521</a></li>
+              <li><a href="https://github.com/alyssonalvesdev/">GitHun</a></li>
             </ul>
           </nav>
 
