@@ -21,7 +21,6 @@ body {
     border-radius: 10px;
 }
 
-footer ul,
 .menu ul {
     display: flex;
     justify-content: space-around;
@@ -32,17 +31,20 @@ footer li,
     list-style: none;
 }
 
-footer a,
-footer p,
 .menu a {
     text-decoration: none;
     padding: 10px;
     color: orange;
+    transition: background 0.5s;
+    border-radius: 5px;
 }
 
 /* Nodificações com o cursor*/
-a:hover {
-    text-decoration: underline;
+header a:active,
+header a:hover {
+    text-decoration: none;
+    background-color: orange;
+    color:#02013d ;
 }
 
 /*Apresentação do site*/
@@ -60,11 +62,15 @@ main {
 }
 
 #perfil{
-    width: 150px; 
-    height: 145px;
+    width: 200px; 
+    height: 195px;
     background-color: grey;
     border-radius: 200px 200px 200px 200px;
     margin: 0px;
+    border-bottom: 3px solid#D2691E;
+    border-top: 3px solid #D2691E;
+    border-left: 3px solid #D2691E;
+    border-right: 3px solid #D2691E;
 }
     
 .apresentacao,
@@ -73,6 +79,13 @@ main {
     color: whitesmoke;
     text-align: center;
     margin:10px;
+    transition: text-shadow 1s;
+}
+
+.site-subtitle:hover,
+.site-title:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255,255,255,1);
 }
     
 .site-subtitle {
@@ -130,6 +143,10 @@ main {
     .sobre p {
         margin: 10vh 0px;
         padding: 1vh;
+    }
+
+    footer ul {
+        font-size: 21px;
     }
   }
 
@@ -211,6 +228,10 @@ main {
 
   }
 
+.portfolio{
+    min-height: 100vh;
+}
+
 .portfolio h2 {
     color: whitesmoke;
     margin:10px;
@@ -227,7 +248,12 @@ main {
     border-top: 3px solid #D2691E;
     border-left: 3px solid #D2691E;
     border-right: 3px solid #D2691E;
-    
+    transition: transform 500ms;
+}
+
+.img-portfolio:active,
+.img-portfolio:hover{
+    transform: scale(1.5) rotateX(45deg);
 }
 
 /* Configuração de imagens */
@@ -250,7 +276,7 @@ figure a {
 }
 
 /* Rodapé */
-footer {
+/*footer {
     background:#02013d;
     margin: 10px;   
     width: 98vw;
@@ -261,3 +287,40 @@ footer {
  footer h2 {
      margin: 10px;
  }
+
+ footer img {
+     max-height: 4vh;
+ }*/
+
+ footer {
+    background:#02013d;
+    margin: 10px;   
+    width: 98vw;
+    bottom: 1px;
+    padding: 10px;
+ }
+
+ footer ul{
+    display: flex;
+    justify-content: center;
+ }
+
+ footer a{
+    padding: 0px 15px;
+    color: orange;
+    font-size: 50px;
+    transition: text-shadow 1s;
+ }
+
+ footer a:active,
+ footer a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255,255,255,1);
+ }
+
+ footer h5 {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 5em;
+}
+ 
