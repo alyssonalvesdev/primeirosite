@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url("../img/fundo2.jpg");
     font-family: 'Roboto', sans-serif;
@@ -229,7 +233,7 @@ main {
   }
 
 .portfolio{
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 .portfolio h2 {
@@ -253,7 +257,7 @@ main {
 
 .img-portfolio:active,
 .img-portfolio:hover{
-    transform: scale(1.5) rotateX(45deg);
+    transform: rotateY(360deg);
 }
 
 /* Configuração de imagens */
